@@ -1,0 +1,7 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{@apply bg-paper text-ink font-sans antialiased}
+:focus-visible{outline:2px solid #0B6A6A;outline-offset:3px}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.rise{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rise{animation:none}}
